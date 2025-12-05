@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Primal Training - Our philosophy and team.">
-    <title>About | Primal Training</title>
+    <meta name="description" content="About Primal Training staff and philosophy.">
+    <title>About Us | Primal Training</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
@@ -14,17 +14,17 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom" aria-label="Main navigation">
         <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <div class="logo-circles" aria-hidden="true"><span></span><span></span><span></span></div>
                 <span class="fw-bold">Primal<span class="fw-light">Training</span></span>
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-bold gap-lg-4">
+                <ul class="navbar-nav ms-auto fw-bold gap-lg-4 text-uppercase">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white px-4" href="reserve.html">Book A Session</a></li>
@@ -34,66 +34,81 @@
     </nav>
 
     <main id="main-content">
-        <!-- Text Header -->
-        <header class="container-fluid px-4 px-lg-5 py-5 bg-light">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold text-uppercase">NOT JUST A GYM.<br><span class="text-primary">A MOVEMENT.</span></h1>
+        <header class="container-fluid px-0 page-header d-flex align-items-center" style="background-image: url('assets/images/about-hero.jpg');">
+            <div class="overlay-dark w-100 h-100 d-flex align-items-center">
+                 <div class="container px-4 px-lg-5">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1 class="display-3 fw-bold text-uppercase text-white">NOT JUST A GYM.<br><span class="text-primary">A MOVEMENT.</span></h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- Split Content Section -->
         <section class="container-fluid px-0">
             <div class="row g-0">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1000" alt="Group of people working out" class="object-fit-cover" style="min-height: 500px;">
+                <div class="col-lg-6 img-hover-zoom">
+                    <img src="assets/images/about-philosophy.jpg" alt="Group of people training together" class="object-fit-cover" style="min-height: 500px;">
                 </div>
                 <div class="col-lg-6 bg-black text-white p-5 d-flex flex-column justify-content-center">
-                    <h2 class="display-5 fw-bold mb-4">OUR PHILOSOPHY</h2>
-                    <p class="lead mb-4 text-white-50">We believe that fitness is the foundation of a life well-lived. It's not about aesthetics; it's about capability, longevity, and mental fortitude.</p>
-                    <div class="d-flex gap-4 mt-3">
-                        <div>
-                            <h3 class="h1 fw-bold text-primary">01</h3>
-                            <p class="small">FUNCTIONAL STRENGTH</p>
-                        </div>
-                        <div>
-                            <h3 class="h1 fw-bold text-primary">02</h3>
-                            <p class="small">COMMUNITY FOCUS</p>
+                    <div class="p-lg-4">
+                        <h2 class="display-5 fw-bold mb-4">OUR PHILOSOPHY</h2>
+                        <p class="lead mb-5 text-white-50">We believe fitness is the foundation of a life well-lived. It's not about aesthetics; it's about capability, longevity, and mental fortitude.</p>
+                        <div class="d-flex gap-5">
+                            <div>
+                                <h3 class="display-4 fw-bold text-primary mb-0">01.</h3>
+                                <p class="small fw-bold letter-spacing-2">FUNCTIONAL STRENGTH</p>
+                            </div>
+                            <div>
+                                <h3 class="display-4 fw-bold text-primary mb-0">02.</h3>
+                                <p class="small fw-bold letter-spacing-2">COMMUNITY FOCUS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Team Section -->
-        <section class="container-fluid px-4 px-lg-5 py-5">
-            <h2 class="display-5 fw-bold mb-5">THE COACHES</h2>
+        <section class="container-fluid px-4 px-lg-5 py-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">WORLD-CLASS COACHES</h2>
+                <p class="text-muted lead">Experts dedicated to your progress.</p>
+            </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600" alt="Head Coach" class="card-img-top grayscale-img">
-                        <div class="card-body px-0">
-                            <h4 class="card-title fw-bold">SARAH JENKINS</h4>
-                            <p class="card-text text-muted small">HEAD COACH / STRENGTH</p>
+                    <div class="card border-0 h-100 shadow-sm trainer-card">
+                        <div class="img-hover-zoom">
+                             <img src="assets/images/trainer-1.jpg" alt="Portrait of Sarah Jenkins" class="card-img-top grayscale-img">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-1">SARAH JENKINS</h4>
+                            <p class="card-text text-primary small fw-bold mb-3">HEAD COACH / STRENGTH</p>
+                            <p class="card-text text-muted">Specializes in powerlifting and functional hypertrophy. Former Olympian.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600" alt="Conditioning Coach" class="card-img-top grayscale-img">
-                        <div class="card-body px-0">
-                            <h4 class="card-title fw-bold">MIKE ROSS</h4>
-                            <p class="card-text text-muted small">CONDITIONING SPECIALIST</p>
+                    <div class="card border-0 h-100 shadow-sm trainer-card">
+                        <div class="img-hover-zoom">
+                            <img src="assets/images/trainer-2.jpg" alt="Portrait of Mike Ross" class="card-img-top grayscale-img">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-1">MIKE ROSS</h4>
+                            <p class="card-text text-primary small fw-bold mb-3">CONDITIONING SPECIALIST</p>
+                             <p class="card-text text-muted">Expert in high-intensity interval training and metabolic conditioning engines.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0">
-                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600" alt="Mobility Coach" class="card-img-top grayscale-img">
-                        <div class="card-body px-0">
-                            <h4 class="card-title fw-bold">JESSICA LEE</h4>
-                            <p class="card-text text-muted small">MOBILITY & RECOVERY</p>
+                    <div class="card border-0 h-100 shadow-sm trainer-card">
+                         <div class="img-hover-zoom">
+                            <img src="assets/images/trainer-3.jpg" alt="Portrait of Jessica Lee" class="card-img-top grayscale-img">
+                         </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold mb-1">JESSICA LEE</h4>
+                            <p class="card-text text-primary small fw-bold mb-3">MOBILITY & RECOVERY</p>
+                             <p class="card-text text-muted">Ensures you stay injury-free through dedicated mobility flow and recovery sessions.</p>
                         </div>
                     </div>
                 </div>
@@ -101,9 +116,8 @@
         </section>
     </main>
 
-    <!-- Simple Footer (Included for requirement) -->
-    <footer class="bg-white border-top py-5 text-center">
-        <p class="small text-muted mb-0">&copy; 2023 Primal Training. All rights reserved.</p>
+    <footer class="bg-white border-top py-4 text-center">
+        <p class="small text-muted mb-0 fw-bold">&copy; 2023 Primal Training. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,73 +1,129 @@
-/* 1. CSS Variables & Theme */
+/* --- 1. Variables & Theme --- */
 :root {
-    --primary-color: #818cf8; /* Periwinkle Blue from design */
+    --primary-color: #818cf8; /* Periwinkle Blue */
     --primary-dark: #6366f1;
-    --secondary-color: #000000;
-    --bg-light: #f8f9fa;
+    --secondary-color: #111111;
+    --bg-light: #f3f4f6;
     --font-heading: 'Oswald', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
-/* 2. Global Resets & Typography */
+/* --- 2. Global Typography & Reset --- */
 body {
     font-family: var(--font-body);
     color: var(--secondary-color);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, .navbar-brand, .btn, .nav-link, th {
+h1, h2, h3, h4, h5, .navbar-brand, .btn, .nav-link, th, .card-title {
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-weight: 700;
 }
 
-/* 3. Bootstrap Overrides */
+/* --- 3. Bootstrap Overrides & Components --- */
 .text-primary { color: var(--primary-color) !important; }
 .bg-primary { background-color: var(--primary-color) !important; }
+.bg-dark { background-color: #111 !important; }
 
-/* Sharp Buttons */
-.btn { border-radius: 0; font-weight: 700; transition: all 0.3s ease; }
+/* Sharp, Professional Buttons */
+.btn {
+    border-radius: 0;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
 .btn-primary:hover {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
+    top: -2px; /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
 }
-.form-control { border-radius: 0; padding: 12px; }
 
-/* 4. Navigation */
-.navbar { padding-top: 20px; padding-bottom: 20px; }
+/* Professional Forms */
+.form-control, .form-select {
+    border-radius: 0;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    font-family: var(--font-body);
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+.form-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* --- 4. Navigation --- */
+.navbar { padding-top: 1.5rem; padding-bottom: 1.5rem; transition: 0.3s; }
 .logo-circles { display: flex; gap: 4px; }
 .logo-circles span { display: block; width: 18px; height: 18px; background: #000; border-radius: 50%; }
-.nav-link.active { color: var(--primary-color) !important; text-decoration: underline; text-underline-offset: 5px; }
+.navbar-brand { font-size: 1.5rem; }
+.nav-link { font-size: 0.9rem; color: var(--secondary-color); }
+.nav-link.active { color: var(--primary-color) !important; }
 
-/* 5. Typography Sizes */
-.display-1 { font-size: 3.5rem; font-weight: 700; line-height: 0.9; }
-@media (min-width: 992px) {
-    .display-1 { font-size: 7rem; margin-left: -5px; }
+/* --- 5. Layout & Image Utilities --- */
+.object-fit-cover { object-fit: cover; width: 100%; height: 100%; }
+.hero-grid { min-height: 650px; }
+
+/* Professional Image Hover Effects */
+.img-hover-zoom {
+    overflow: hidden;
+}
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+.img-hover-zoom:hover img {
+    transform: scale(1.05);
 }
 
-/* 6. Image & Layout Utilities */
-.object-fit-cover { object-fit: cover; width: 100%; height: 100%; }
-.hero-grid { min-height: 600px; }
-.grayscale-img { filter: grayscale(100%); transition: 0.3s; }
+.grayscale-img { filter: grayscale(100%); transition: 0.4s ease; }
 .grayscale-img:hover { filter: grayscale(0%); }
 
-/* Overlapping Box Effect */
-.overlap-box {
-    margin-top: -50px;
-    z-index: 10;
+/* Typography Sizes */
+.display-1 { font-size: 3.5rem; line-height: 0.9; }
+@media (min-width: 992px) { .display-1 { font-size: 7rem; margin-left: -5px; } }
+
+/* --- 6. Page Specific Styles --- */
+/* About Page Header */
+.page-header {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    background: white;
-    padding: 30px;
-    border: 1px solid #eee;
+}
+.overlay-dark { background: rgba(0,0,0,0.6); }
+
+/* Trainer Cards */
+.trainer-card { transition: 0.3s; border-bottom: 3px solid transparent; }
+.trainer-card:hover {
+    border-bottom: 3px solid var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-/* 7. Accessibility */
+/* Reserve Table */
+.table-hover tbody tr:hover {
+    background-color: rgba(129, 140, 248, 0.1); /* Slight primary color tint on hover */
+}
+
+/* --- 7. Accessibility --- */
 .skip-link {
     position: absolute; top: -50px; left: 0;
     background: var(--primary-color); color: white; padding: 10px; z-index: 9999;
+    font-weight: 700;
 }
 .skip-link:focus { top: 0; }
