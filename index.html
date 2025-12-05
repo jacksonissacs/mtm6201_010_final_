@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Performance-driven gym and fitness community - Transform your body, elevate your performance">
+    <meta name="author" content="APEX Performance Gym">
+    <title>APEX Performance Gym | Transform Your Potential</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="APEX Performance Gym - Home">
+                <span class="brand-text">APEX</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="#membership">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" role="banner">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                            TRANSFORM<br>
+                            YOUR<br>
+                            <span class="highlight">POTENTIAL</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Elite training for those who demand more. Build strength, power, and an unbreakable mindset.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#membership" class="btn btn-primary btn-lg">Start Your Journey</a>
+                            <a href="classes.html" class="btn btn-outline-light btn-lg ms-3">View Classes</a>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <div class="stat-number">500+</div>
+                                        <div class="stat-label">Active Members</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <div class="stat-number">15</div>
+                                        <div class="stat-label">Expert Coaches</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <div class="stat-number">50+</div>
+                                        <div class="stat-label">Weekly Classes</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <div class="stat-number">24/7</div>
+                                        <div class="stat-label">Access</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Programs Section -->
+        <section class="programs-section py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">WHAT WE OFFER</span>
+                    <h2 class="section-title">Elite Training Programs</h2>
+                    <p class="section-description">
+                        Specialized programs designed to push your limits and achieve peak performance
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Program 1 -->
+                    <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/program1-large.jpg">
+                                    <source media="(min-width: 480px)" srcset="images/program1-medium.jpg">
+                                    <img src="images/program1-small.jpg" 
+                                         alt="Strength training program with weight lifting" 
+                                         class="img-fluid"
+                                         loading="lazy">
+                                </picture>
+                                <div class="program-badge">POPULAR</div>
+                            </div>
+                            <div class="program-content">
+                                <h3 class="program-title">Strength & Conditioning</h3>
+                                <p class="program-description">
+                                    Build raw power and functional strength through compound movements and progressive overload training.
+                                </p>
+                                <ul class="program-features">
+                                    <li><i class="bi bi-check-circle-fill"></i> Personalized programming</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Olympic lifting techniques</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Powerlifting fundamentals</li>
+                                </ul>
+                                <a href="classes.html" class="btn btn-outline-primary w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Program 2 -->
+                    <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/program2-large.jpg">
+                                    <source media="(min-width: 480px)" srcset="images/program2-medium.jpg">
+                                    <img src="images/program2-small.jpg" 
+                                         alt="High intensity interval training class" 
+                                         class="img-fluid"
+                                         loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="program-content">
+                                <h3 class="program-title">HIIT & Conditioning</h3>
+                                <p class="program-description">
+                                    High-intensity metabolic conditioning to torch fat, build endurance, and boost athletic performance.
+                                </p>
+                                <ul class="program-features">
+                                    <li><i class="bi bi-check-circle-fill"></i> Maximum calorie burn</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Cardiovascular endurance</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Athletic conditioning</li>
+                                </ul>
+                                <a href="classes.html" class="btn btn-outline-primary w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Program 3 -->
+                    <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/program3-large.jpg">
+                                    <source media="(min-width: 480px)" srcset="images/program3-medium.jpg">
+                                    <img src="images/program3-small.jpg" 
+                                         alt="Personal training session one-on-one" 
+                                         class="img-fluid"
+                                         loading="lazy">
+                                </picture>
+                                <div class="program-badge badge-elite">ELITE</div>
+                            </div>
+                            <div class="program-content">
+                                <h3 class="program-title">Personal Training</h3>
+                                <p class="program-description">
+                                    One-on-one coaching tailored to your goals with personalized nutrition and training plans.
+                                </p>
+                                <ul class="program-features">
+                                    <li><i class="bi bi-check-circle-fill"></i> Individual attention</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Custom meal plans</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Progress tracking</li>
+                                </ul>
+                                <a href="classes.html" class="btn btn-outline-primary w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-section py-5">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="images/why-large.jpg">
+                            <source media="(min-width: 480px)" srcset="images/why-medium.jpg">
+                            <img src="images/why-small.jpg" 
+                                 alt="Modern gym facility with state-of-the-art equipment" 
+                                 class="img-fluid rounded-3"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <span class="section-label">WHY APEX</span>
+                        <h2 class="section-title">Performance<br>First Approach</h2>
+                        <p class="lead mb-4">
+                            We're not just another gym. We're a community of dedicated athletes and fitness enthusiasts committed to excellence.
+                        </p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Elite Coaching Staff</h4>
+                                    <p>Certified trainers with competitive experience and advanced certifications</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Premium Equipment</h4>
+                                    <p>State-of-the-art machines and free weights from top manufacturers</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Strong Community</h4>
+                                    <p>Train alongside motivated athletes who push you to be better</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-lightning-charge"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Results Driven</h4>
+                                    <p>Proven methodology that delivers measurable results</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">SUCCESS STORIES</span>
+                    <h2 class="section-title">What Our Members Say</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "APEX transformed not just my body, but my entire mindset. The coaches genuinely care about your progress and the community is incredibly supportive."
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Sarah Johnson</strong>
+                                <span>Member for 2 years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Best investment I've made in myself. The personal training program helped me achieve goals I never thought possible. Down 40lbs and stronger than ever!"
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Marcus Chen</strong>
+                                <span>Member for 1 year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The facility is top-notch and the programming is intelligent. I've seen more progress in 6 months here than years at other gyms. Highly recommend!"
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Emily Rodriguez</strong>
+                                <span>Member for 6 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section id="membership" class="membership-section py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">GET STARTED</span>
+                    <h2 class="section-title">Membership Options</h2>
+                    <p class="section-description">
+                        Choose the plan that fits your fitness journey
+                    </p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Basic Plan -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="pricing-plan">Basic</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">$49</span>
+                                    <span class="price-period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> 24/7 gym access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Locker room amenities</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Group fitness classes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Mobile app access</li>
+                                <li class="disabled"><i class="bi bi-x-circle"></i> Personal training</li>
+                                <li class="disabled"><i class="bi bi-x-circle"></i> Nutrition guidance</li>
+                            </ul>
+                            <a href="about.html#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-card featured">
+                            <div class="featured-badge">MOST POPULAR</div>
+                            <div class="pricing-header">
+                                <h3 class="pricing-plan">Pro</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">$89</span>
+                                    <span class="price-period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Everything in Basic</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 2 PT sessions/month</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Nutrition consultation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Priority class booking</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Body composition scan</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Guest passes (2/month)</li>
+                            </ul>
+                            <a href="about.html#contact" class="btn btn-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Elite Plan -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="pricing-plan">Elite</h3>
+                                <div class="pricing-price">
+                                    <span class="price-amount">$149</span>
+                                    <span class="price-period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Everything in Pro</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 8 PT sessions/month</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Custom meal plans</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Recovery & spa access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Supplement discounts</li>
+                                <li><i class="bi bi-check-circle-fill"></i> VIP locker</li>
+                            </ul>
+                            <a href="about.html#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="cta-title">Ready to Transform?</h2>
+                        <p class="cta-description">
+                            Start your journey today with a free trial week. No commitment required.
+                        </p>
+                        <a href="about.html#contact" class="btn btn-primary btn-lg me-3">Claim Free Trial</a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-5" role="contentinfo">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">APEX Performance Gym</h3>
+                    <p class="footer-description">
+                        Building stronger bodies and unbreakable minds since 2015.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                           aria-label="Visit our Facebook page" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                           aria-label="Visit our Instagram profile" class="social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
+                           aria-label="Visit our YouTube channel" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                           aria-label="Visit our Twitter profile" class="social-link">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Strength Training</a></li>
+                        <li><a href="classes.html">HIIT Classes</a></li>
+                        <li><a href="classes.html">Personal Training</a></li>
+                        <li><a href="classes.html">Nutrition Coaching</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            123 Fitness St, Gatineau, QC
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@apexgym.com">info@apexgym.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2024 APEX Performance Gym. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
