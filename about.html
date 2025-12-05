@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about APEX Performance Gym - Our mission, values, and commitment to helping you achieve your fitness goals">
-    <meta name="author" content="APEX Performance Gym">
-    <title>About Us | APEX Performance Gym</title>
+    <meta name="description" content="About PrimalTraining - Where your fitness journey starts and stronger soul begins">
+    <meta name="author" content="PrimalTraining">
+    <title>About | PrimalTraining</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -29,10 +29,17 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="APEX Performance Gym - Home">
-                <span class="brand-text">APEX</span>
+            <a class="navbar-brand" href="index.html" aria-label="PrimalTraining - Home">
+                <div class="brand-logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="20" r="8" fill="#000"/>
+                        <circle cx="28" cy="20" r="8" fill="#000"/>
+                        <rect x="18" y="16" width="4" height="8" fill="#000"/>
+                    </svg>
+                    <span class="brand-text">PrimalTraining</span>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +51,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="classes.html">Classes</a>
+                        <a class="nav-link active" href="about.html">/about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About</a>
+                        <a class="nav-link" href="reserve.html">/reserve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="index.html#membership">Join Now</a>
+                        <a class="btn btn-primary ms-lg-3" href="reserve.html">BOOK NOW</a>
                     </li>
                 </ul>
             </div>
@@ -60,167 +67,109 @@
     <!-- Main Content -->
     <main id="main-content">
         
-        <!-- Page Hero -->
-        <section class="page-hero">
+        <!-- Hero Section -->
+        <section class="page-hero-section">
             <div class="container">
-                <div class="row align-items-center min-vh-50">
-                    <div class="col-12 text-center" data-aos="fade-up">
-                        <h1 class="page-title">About APEX</h1>
-                        <p class="page-subtitle">
-                            More than a gym. A community of champions.
-                        </p>
+                <div class="row">
+                    <div class="col-12" data-aos="fade-up">
+                        <h1 class="page-hero-title">ABOUT US</h1>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Our Story Section -->
-        <section class="story-section py-5">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/story-large.jpg">
-                            <source media="(min-width: 480px)" srcset="images/story-medium.jpg">
-                            <img src="images/story-small.jpg" 
-                                 alt="APEX Performance Gym training floor with members working out" 
-                                 class="img-fluid rounded-3"
-                                 loading="lazy">
-                        </picture>
+        <!-- Intro Section -->
+        <section class="intro-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                        <h2 class="intro-title">WHERE YOUR FITNESS JOURNEY<br>STARTS & STRONGER SOUL</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Grid -->
+        <section class="about-grid-section py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-8" data-aos="fade-up">
+                        <div class="grid-image-wrapper large">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about1-large.jpg">
+                                <img src="images/about1-small.jpg" alt="Training session" class="img-fluid" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-image-wrapper">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about2-large.jpg">
+                                <img src="images/about2-small.jpg" alt="Gym equipment" class="img-fluid" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Open Gym Section -->
+        <section class="dynamic-gym-section py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="content-box">
+                            <div class="label-tag">GUIDED BY EXPERTS</div>
+                            <h2 class="section-title">DYNAMIC OPEN GYM</h2>
+                            <p class="section-text">
+                                Our facility is equipped with state-of-the-art equipment and guided by expert trainers 
+                                who are dedicated to helping you achieve your fitness goals. Whether you're a beginner 
+                                or an advanced athlete, we provide the support and environment you need to succeed.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
-                        <span class="section-label">OUR STORY</span>
-                        <h2 class="section-title">Built on Performance</h2>
-                        <p class="lead">
-                            Founded in 2015, APEX Performance Gym was born from a simple belief: everyone deserves 
-                            access to elite-level training and coaching.
-                        </p>
-                        <p>
-                            What started as a small warehouse space with a handful of dedicated athletes has grown 
-                            into one of the region's premier performance training facilities. Our founders, former 
-                            collegiate athletes themselves, recognized a gap in the fitness industry - too many gyms 
-                            focused on aesthetics over athletics, machine work over movement quality.
-                        </p>
-                        <p>
-                            Today, APEX stands as a testament to what's possible when you combine expert coaching, 
-                            premium equipment, and a community that pushes each other to be better every single day. 
-                            We've helped hundreds of athletes reach their goals, from everyday fitness enthusiasts 
-                            to competitive powerlifters and professional athletes.
-                        </p>
+                        <div class="grid-image-wrapper">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about3-large.jpg">
+                                <img src="images/about3-small.jpg" alt="Open gym area" class="img-fluid" loading="lazy">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Mission & Values Section -->
+        <!-- Values Section -->
         <section class="values-section py-5">
-            <div class="container py-5">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <span class="section-label">WHAT WE STAND FOR</span>
-                    <h2 class="section-title">Our Core Values</h2>
-                </div>
-
+            <div class="container">
                 <div class="row g-4">
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="value-card">
+                            <h3 class="value-title">OUR MISSION</h3>
+                            <p class="value-text">
+                                To empower individuals through fitness, building not just stronger bodies 
+                                but stronger minds and communities.
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="value-card">
-                            <div class="value-icon">
-                                <i class="bi bi-trophy"></i>
-                            </div>
-                            <h3 class="value-title">Excellence</h3>
-                            <p class="value-description">
-                                We hold ourselves and our members to the highest standards. Every workout, every rep, 
-                                every coaching cue is an opportunity to pursue excellence.
+                            <h3 class="value-title">OUR VISION</h3>
+                            <p class="value-text">
+                                Creating a world where everyone has access to quality fitness training 
+                                and the support they need to thrive.
                             </p>
                         </div>
                     </div>
-
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="value-card">
-                            <div class="value-icon">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="value-title">Community</h3>
-                            <p class="value-description">
-                                Individual growth, collective success. We believe in the power of training alongside 
-                                others who share your commitment to improvement.
+                            <h3 class="value-title">OUR VALUES</h3>
+                            <p class="value-text">
+                                Excellence, community, integrity, and continuous improvement in everything 
+                                we do.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="value-card">
-                            <div class="value-icon">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                            <h3 class="value-title">Progress</h3>
-                            <p class="value-description">
-                                Results speak louder than words. We're obsessed with tracking, measuring, and 
-                                celebrating your progress every step of the way.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Facility Section -->
-        <section class="facility-section py-5">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="images/facility-large.jpg">
-                            <source media="(min-width: 480px)" srcset="images/facility-medium.jpg">
-                            <img src="images/facility-small.jpg" 
-                                 alt="State-of-the-art gym equipment and training area" 
-                                 class="img-fluid rounded-3"
-                                 loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                        <span class="section-label">OUR FACILITY</span>
-                        <h2 class="section-title">World-Class Equipment</h2>
-                        <p class="lead">
-                            12,000 square feet of premium training space equipped with the best gear in the industry.
-                        </p>
-                        
-                        <ul class="facility-features">
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <div>
-                                    <strong>Olympic Lifting Platform</strong>
-                                    <span>Competition-grade platforms with bumper plates and precision barbells</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <div>
-                                    <strong>Powerlifting Section</strong>
-                                    <span>Calibrated plates, competition benches, and squat racks</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <div>
-                                    <strong>Cardio & Conditioning</strong>
-                                    <span>Assault bikes, rowers, ski ergs, and sled track</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <div>
-                                    <strong>Recovery Zone</strong>
-                                    <span>Foam rollers, massage guns, stretching area, and sauna</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <div>
-                                    <strong>Member Amenities</strong>
-                                    <span>Spacious locker rooms, showers, and secure storage</span>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -228,177 +177,63 @@
 
         <!-- Stats Section -->
         <section class="stats-section py-5">
-            <div class="container py-5">
+            <div class="container">
                 <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3" data-aos="fade-up">
+                        <div class="stat-box">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">MEMBERS</div>
+                        </div>
+                    </div>
                     <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="stat-box">
-                            <div class="stat-number">9</div>
-                            <div class="stat-label">Years in Business</div>
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">TRAINERS</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="stat-box">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Active Members</div>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">CLASSES</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="stat-box">
-                            <div class="stat-number">15</div>
-                            <div class="stat-label">Expert Coaches</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-box">
-                            <div class="stat-number">12K</div>
-                            <div class="stat-label">Sq Ft Facility</div>
+                            <div class="stat-number">9</div>
+                            <div class="stat-label">YEARS</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section py-5">
-            <div class="container py-5">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <span class="section-label">GET IN TOUCH</span>
-                    <h2 class="section-title">Contact Us</h2>
-                    <p class="section-description">
-                        Have questions? Want to schedule a tour? We'd love to hear from you.
-                    </p>
-                </div>
-
-                <div class="row g-5">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="contact-info-wrapper">
-                            <div class="contact-info-item">
-                                <div class="contact-info-icon">
-                                    <i class="bi bi-geo-alt"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h4>Visit Us</h4>
-                                    <p>123 Fitness Street<br>Gatineau, QC J8X 1A1<br>Canada</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-item">
-                                <div class="contact-info-icon">
-                                    <i class="bi bi-telephone"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h4>Call Us</h4>
-                                    <p>
-                                        Phone: <a href="tel:+15551234567">(555) 123-4567</a><br>
-                                        Fax: (555) 123-4568
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-item">
-                                <div class="contact-info-icon">
-                                    <i class="bi bi-envelope"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h4>Email Us</h4>
-                                    <p>
-                                        General: <a href="mailto:info@apexgym.com">info@apexgym.com</a><br>
-                                        Memberships: <a href="mailto:join@apexgym.com">join@apexgym.com</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-item">
-                                <div class="contact-info-icon">
-                                    <i class="bi bi-clock"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h4>Hours</h4>
-                                    <p>
-                                        Monday - Friday: 5:00 AM - 11:00 PM<br>
-                                        Saturday - Sunday: 7:00 AM - 9:00 PM<br>
-                                        <strong>24/7 Access for Members</strong>
-                                    </p>
-                                </div>
-                            </div>
+        <!-- More Images -->
+        <section class="more-images-section py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="grid-image-wrapper">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about4-large.jpg">
+                                <img src="images/about4-small.jpg" alt="Training equipment" class="img-fluid" loading="lazy">
+                            </picture>
                         </div>
                     </div>
-
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <form class="contact-form" role="form" aria-label="Contact form">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstName" 
-                                               placeholder="First Name" required aria-required="true">
-                                        <label for="firstName">First Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastName" 
-                                               placeholder="Last Name" required aria-required="true">
-                                        <label for="lastName">Last Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" 
-                                               placeholder="Email" required aria-required="true">
-                                        <label for="email">Email Address</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" 
-                                               placeholder="Phone">
-                                        <label for="phone">Phone Number (Optional)</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="interest" aria-label="Select your interest">
-                                            <option value="">Please Select</option>
-                                            <option value="membership">Membership Information</option>
-                                            <option value="trial">Free Trial Class</option>
-                                            <option value="personal-training">Personal Training</option>
-                                            <option value="facility-tour">Facility Tour</option>
-                                            <option value="other">Other Question</option>
-                                        </select>
-                                        <label for="interest">I'm Interested In</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" 
-                                                  placeholder="Your Message" style="height: 150px" 
-                                                  required aria-required="true"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary w-100 py-3">
-                                        Send Message
-                                        <i class="bi bi-send ms-2"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="grid-image-wrapper">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about5-large.jpg">
+                                <img src="images/about5-small.jpg" alt="Group training" class="img-fluid" loading="lazy">
+                            </picture>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Map Section -->
-        <section class="map-section">
-            <div class="map-placeholder">
-                <div class="map-overlay">
-                    <div class="map-text">
-                        <i class="bi bi-geo-alt"></i>
-                        <p>123 Fitness Street, Gatineau, QC</p>
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-light">
-                            Get Directions
-                        </a>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="grid-image-wrapper">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/about6-large.jpg">
+                                <img src="images/about6-small.jpg" alt="Personal coaching" class="img-fluid" loading="lazy">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,89 +241,73 @@
 
         <!-- CTA Section -->
         <section class="cta-section py-5">
-            <div class="container py-5">
+            <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
-                        <h2 class="cta-title">Ready to Start?</h2>
-                        <p class="cta-description">
-                            Join the APEX community today and discover what you're truly capable of achieving.
-                        </p>
-                        <a href="index.html#membership" class="btn btn-primary btn-lg me-3">View Membership Options</a>
-                        <a href="classes.html" class="btn btn-outline-light btn-lg">Browse Classes</a>
+                    <div class="col-lg-10" data-aos="zoom-in">
+                        <div class="cta-box">
+                            <h2 class="cta-title">JOIN THE PRIMAL TRIBE TODAY!</h2>
+                            <a href="reserve.html" class="btn btn-light btn-lg">GET STARTED</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer py-5" role="contentinfo">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="footer-title">APEX Performance Gym</h3>
-                    <p class="footer-description">
-                        Building stronger bodies and unbreakable minds since 2015.
-                    </p>
-                    <div class="social-links mt-4">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-                           aria-label="Visit our Facebook page" class="social-link">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                           aria-label="Visit our Instagram profile" class="social-link">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
-                           aria-label="Visit our YouTube channel" class="social-link">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
-                           aria-label="Visit our Twitter profile" class="social-link">
-                            <i class="bi bi-twitter"></i>
-                        </a>
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <div class="brand-logo mb-3">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="20" r="8" fill="#000"/>
+                                <circle cx="28" cy="20" r="8" fill="#000"/>
+                                <rect x="18" y="16" width="4" height="8" fill="#000"/>
+                            </svg>
+                            <span class="brand-text">PrimalTraining</span>
+                        </div>
+                        <p class="footer-text">Building stronger bodies and minds since 2015.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="classes.html">Classes</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="about.html">/about</a></li>
+                        <li><a href="reserve.html">/reserve</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="footer-heading">Programs</h4>
                     <ul class="footer-links">
-                        <li><a href="classes.html">Strength Training</a></li>
-                        <li><a href="classes.html">HIIT Classes</a></li>
-                        <li><a href="classes.html">Personal Training</a></li>
-                        <li><a href="classes.html">Nutrition Coaching</a></li>
+                        <li><a href="reserve.html">Strength Training</a></li>
+                        <li><a href="reserve.html">Cardio Classes</a></li>
+                        <li><a href="reserve.html">Community Classes</a></li>
+                        <li><a href="reserve.html">Personal Training</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            123 Fitness St, Gatineau, QC
-                        </li>
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
-                        </li>
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            <a href="mailto:info@apexgym.com">info@apexgym.com</a>
-                        </li>
-                    </ul>
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr class="footer-divider">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="copyright">&copy; 2024 APEX Performance Gym. All rights reserved.</p>
+                    <p class="copyright">&copy; 2024 PrimalTraining. All rights reserved.</p>
                 </div>
             </div>
         </div>
