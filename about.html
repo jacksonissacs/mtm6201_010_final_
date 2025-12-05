@@ -3,323 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About PrimalTraining - Where your fitness journey starts and stronger soul begins">
-    <meta name="author" content="PrimalTraining">
-    <title>About | PrimalTraining</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- AOS (Animate On Scroll) Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
+    <meta name="description" content="About Primal Training - Our philosophy and team.">
+    <title>About | Primal Training</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Skip to main content link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="PrimalTraining - Home">
-                <div class="brand-logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12" cy="20" r="8" fill="#000"/>
-                        <circle cx="28" cy="20" r="8" fill="#000"/>
-                        <rect x="18" y="16" width="4" height="8" fill="#000"/>
-                    </svg>
-                    <span class="brand-text">PrimalTraining</span>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="logo-circles" aria-hidden="true"><span></span><span></span><span></span></div>
+                <span class="fw-bold">Primal<span class="fw-light">Training</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">/about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reserve.html">/reserve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="reserve.html">BOOK NOW</a>
-                    </li>
+                <ul class="navbar-nav ms-auto fw-bold gap-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-4" href="reserve.html">Book A Session</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main id="main-content">
-        
-        <!-- Hero Section -->
-        <section class="page-hero-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12" data-aos="fade-up">
-                        <h1 class="page-hero-title">ABOUT US</h1>
-                    </div>
+        <!-- Text Header -->
+        <header class="container-fluid px-4 px-lg-5 py-5 bg-light">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold text-uppercase">NOT JUST A GYM.<br><span class="text-primary">A MOVEMENT.</span></h1>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <!-- Intro Section -->
-        <section class="intro-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                        <h2 class="intro-title">WHERE YOUR FITNESS JOURNEY<br>STARTS & STRONGER SOUL</h2>
-                    </div>
+        <!-- Split Content Section -->
+        <section class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1000" alt="Group of people working out" class="object-fit-cover" style="min-height: 500px;">
                 </div>
-            </div>
-        </section>
-
-        <!-- Image Grid -->
-        <section class="about-grid-section py-5">
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-md-8" data-aos="fade-up">
-                        <div class="grid-image-wrapper large">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about1-large.jpg">
-                                <img src="images/about1-small.jpg" alt="Training session" class="img-fluid" loading="lazy">
-                            </picture>
+                <div class="col-lg-6 bg-black text-white p-5 d-flex flex-column justify-content-center">
+                    <h2 class="display-5 fw-bold mb-4">OUR PHILOSOPHY</h2>
+                    <p class="lead mb-4 text-white-50">We believe that fitness is the foundation of a life well-lived. It's not about aesthetics; it's about capability, longevity, and mental fortitude.</p>
+                    <div class="d-flex gap-4 mt-3">
+                        <div>
+                            <h3 class="h1 fw-bold text-primary">01</h3>
+                            <p class="small">FUNCTIONAL STRENGTH</p>
                         </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-image-wrapper">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about2-large.jpg">
-                                <img src="images/about2-small.jpg" alt="Gym equipment" class="img-fluid" loading="lazy">
-                            </picture>
+                        <div>
+                            <h3 class="h1 fw-bold text-primary">02</h3>
+                            <p class="small">COMMUNITY FOCUS</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Dynamic Open Gym Section -->
-        <section class="dynamic-gym-section py-5">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="content-box">
-                            <div class="label-tag">GUIDED BY EXPERTS</div>
-                            <h2 class="section-title">DYNAMIC OPEN GYM</h2>
-                            <p class="section-text">
-                                Our facility is equipped with state-of-the-art equipment and guided by expert trainers 
-                                who are dedicated to helping you achieve your fitness goals. Whether you're a beginner 
-                                or an advanced athlete, we provide the support and environment you need to succeed.
-                            </p>
+        <!-- Team Section -->
+        <section class="container-fluid px-4 px-lg-5 py-5">
+            <h2 class="display-5 fw-bold mb-5">THE COACHES</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600" alt="Head Coach" class="card-img-top grayscale-img">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">SARAH JENKINS</h4>
+                            <p class="card-text text-muted small">HEAD COACH / STRENGTH</p>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="grid-image-wrapper">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about3-large.jpg">
-                                <img src="images/about3-small.jpg" alt="Open gym area" class="img-fluid" loading="lazy">
-                            </picture>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600" alt="Conditioning Coach" class="card-img-top grayscale-img">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">MIKE ROSS</h4>
+                            <p class="card-text text-muted small">CONDITIONING SPECIALIST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600" alt="Mobility Coach" class="card-img-top grayscale-img">
+                        <div class="card-body px-0">
+                            <h4 class="card-title fw-bold">JESSICA LEE</h4>
+                            <p class="card-text text-muted small">MOBILITY & RECOVERY</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Values Section -->
-        <section class="values-section py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4" data-aos="fade-up">
-                        <div class="value-card">
-                            <h3 class="value-title">OUR MISSION</h3>
-                            <p class="value-text">
-                                To empower individuals through fitness, building not just stronger bodies 
-                                but stronger minds and communities.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="value-card">
-                            <h3 class="value-title">OUR VISION</h3>
-                            <p class="value-text">
-                                Creating a world where everyone has access to quality fitness training 
-                                and the support they need to thrive.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="value-card">
-                            <h3 class="value-title">OUR VALUES</h3>
-                            <p class="value-text">
-                                Excellence, community, integrity, and continuous improvement in everything 
-                                we do.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats-section py-5">
-            <div class="container">
-                <div class="row g-4 text-center">
-                    <div class="col-6 col-md-3" data-aos="fade-up">
-                        <div class="stat-box">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">MEMBERS</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
-                        <div class="stat-box">
-                            <div class="stat-number">15</div>
-                            <div class="stat-label">TRAINERS</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-                        <div class="stat-box">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">CLASSES</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-box">
-                            <div class="stat-number">9</div>
-                            <div class="stat-label">YEARS</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- More Images -->
-        <section class="more-images-section py-5">
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="grid-image-wrapper">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about4-large.jpg">
-                                <img src="images/about4-small.jpg" alt="Training equipment" class="img-fluid" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="grid-image-wrapper">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about5-large.jpg">
-                                <img src="images/about5-small.jpg" alt="Group training" class="img-fluid" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="grid-image-wrapper">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="images/about6-large.jpg">
-                                <img src="images/about6-small.jpg" alt="Personal coaching" class="img-fluid" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10" data-aos="zoom-in">
-                        <div class="cta-box">
-                            <h2 class="cta-title">JOIN THE PRIMAL TRIBE TODAY!</h2>
-                            <a href="reserve.html" class="btn btn-light btn-lg">GET STARTED</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="footer py-5" role="contentinfo">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand">
-                        <div class="brand-logo mb-3">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="20" r="8" fill="#000"/>
-                                <circle cx="28" cy="20" r="8" fill="#000"/>
-                                <rect x="18" y="16" width="4" height="8" fill="#000"/>
-                            </svg>
-                            <span class="brand-text">PrimalTraining</span>
-                        </div>
-                        <p class="footer-text">Building stronger bodies and minds since 2015.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">/about</a></li>
-                        <li><a href="reserve.html">/reserve</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Programs</h4>
-                    <ul class="footer-links">
-                        <li><a href="reserve.html">Strength Training</a></li>
-                        <li><a href="reserve.html">Cardio Classes</a></li>
-                        <li><a href="reserve.html">Community Classes</a></li>
-                        <li><a href="reserve.html">Personal Training</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="footer-heading">Connect</h4>
-                    <div class="social-links">
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                            <i class="bi bi-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="copyright">&copy; 2024 PrimalTraining. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Simple Footer (Included for requirement) -->
+    <footer class="bg-white border-top py-5 text-center">
+        <p class="small text-muted mb-0">&copy; 2023 Primal Training. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- AOS (Animate On Scroll) JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
